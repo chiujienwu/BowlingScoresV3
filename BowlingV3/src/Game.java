@@ -18,13 +18,6 @@ public class Game {
 
         for (int x = 0; x < 10; x++)
         {
-            int pins1 = gameRolls[x].pins1;
-            int pins2 = gameRolls[x].pins2;
-            boolean isStrike = gameRolls[x].isStrike;
-            boolean isSpare = gameRolls[x].isSpare;
-            int frame = gameRolls[x].frame;
-            int frame10Bonus = gameRolls[x].frame10Bonus;
-
             //score a frame without strike or spare
             if (gameRolls[x].pins1 != 10 && (gameRolls[x].pins1+gameRolls[x].pins2) < 10)
             {
